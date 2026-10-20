@@ -30,15 +30,15 @@ public class CertificateController {
         return ResponseEntity.ok()
                 .cacheControl(CacheControl.noCache())
                 .contentType(MediaType.APPLICATION_PDF)
-                .body(new ClassPathResource("static/original.pdf"));
+                .body(new ClassPathResource("static/finalpdf.pdf"));
     }
 
-    @GetMapping(value = "/original.png", produces = MediaType.IMAGE_PNG_VALUE)
+    @GetMapping(value = "/finalimage.png", produces = MediaType.IMAGE_PNG_VALUE)
     @ResponseBody
     public ResponseEntity<org.springframework.core.io.Resource> certificateImage() {
         return ResponseEntity.ok()
                 .cacheControl(CacheControl.noCache())
                 .contentType(MediaType.IMAGE_PNG)
-                .body(new ClassPathResource("static/original.png"));
+                .body(new ClassPathResource("static/finalimage.png"));
     }
 }
