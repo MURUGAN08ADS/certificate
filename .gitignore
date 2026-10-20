@@ -1,0 +1,5 @@
+target/
+node_modules/
+db_connect/node_modules/
+.env
+*.log
