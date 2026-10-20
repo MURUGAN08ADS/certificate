@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class CertificateController {
 
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/verify/NOC-E9RC-8P2V-TJ807";
+    }
+
     @GetMapping("/verify/{id}")
     public String verify(@PathVariable("id") String id, Model model) {
         model.addAttribute("searchedId", id);
