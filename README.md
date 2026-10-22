@@ -1,6 +1,24 @@
 # Certificate Display Portal
 
-This is a static certificate display page served by a small Spring Boot application.
+This repository contains both a Spring Boot version and a fully static version of the certificate display page.
+
+## Static website
+
+The `static-site` folder can be deployed directly to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or any static hosting service. It does not require Java, Maven, Docker, or a database.
+
+Static certificate URL:
+
+```text
+/verify/NOC-E9RC-8P2V-TJ807/
+```
+
+The static site displays `static-site/finalimage.png`. Clicking the image downloads:
+
+```text
+/verify/NOC-E9RC-8P2V-TJ807/certificate.pdf
+```
+
+To deploy with GitHub Pages, configure Pages to publish from the `static-site` folder, or copy the contents of `static-site` to a dedicated Pages branch.
 
 ## Run locally
 
