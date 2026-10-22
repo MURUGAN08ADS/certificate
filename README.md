@@ -23,7 +23,7 @@ The root URL redirects to the same certificate page. Clicking the certificate
 image downloads:
 
 ```text
-/verify/NOC-E9RC-8P2V-TJ807/certificate.pdf
+/verify/NOC-E9RC-8P2V-TJ807/pdf.pdf
 ```
 
 The static site does not require Java, Spring Boot, Maven, Docker, MySQL, or
