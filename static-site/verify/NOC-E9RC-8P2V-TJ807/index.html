@@ -10,23 +10,14 @@
         }
         html,
         body {
-            width: 100%;
-            height: 100%;
             margin: 0;
         }
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
             background: #fff;
         }
         a {
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
+            display: block;
+            padding: 10px 0 0;
             cursor: default;
         }
         a:hover {
@@ -34,16 +25,25 @@
         }
         img {
             display: block;
-            width: min(1065px, calc(100vw - 6cm));
+            width: min(1065px, 95vw);
             max-width: 100%;
             height: auto;
+            margin: 0 auto;
             border: 1px solid #d9d9d9;
+        }
+        @media (max-width: 600px) {
+            a {
+                padding: 10px 7px 0;
+            }
+            img {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="../../../lastpdf.pdf" download="lastpdf.pdf" aria-label="Download certificate PDF">
-        <img src="../../../lastpng.png" alt="Certificate">
+    <a href="../../lastpdf.pdf" download="lastpdf.pdf" aria-label="Download certificate PDF">
+        <img src="../../lastpng.png" alt="Certificate">
     </a>
 </body>
 </html>
